@@ -1,19 +1,140 @@
-*{
-    margin: 0;
+* {
+    margin : 0;
     padding: 0;
 }
 
-.login_bg{
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.login_bg {
     background-color: #222D32;
 }
 
-.mt_150{
+.mt_150 {
     margin-top: 150px;
 }
 
 
-.panel-title{
-    height: 40px;
+.panel-title {
+    height     : 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size  : 20px;
+}
+
+.lt_aside {
+    width           : 180px;
+    height          : 100%;
+    color           : #fff;
+    background-color: #222D32;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    z-index         : 2;
+    transition      : all 1s;
+}
+
+.lt_aside.hidemenu {
+    left: -180px;
+}
+
+.lt_aside .brand {
+    height          : 50px;
+    line-height     : 50px;
+    text-align      : center;
+    font-size       : 24px;
+    background-color: #367FA9;
+
+}
+
+.lt_aside .brand a {
+    color: #fff;
+}
+
+.lt_aside .user {
+    margin-top   : 30px;
+    margin-bottom: 20px;
+}
+
+.lt_aside .user img {
+    width        : 80px;
+    height       : 80px;
+    border-radius: 50%;
+    display      : block;
+    margin       : 0 auto;
+}
+
+.lt_aside .user p {
+    text-align : center;
+    height     : 40px;
+    line-height: 40px;
+    font-size  : 18px;
+}
+
+
+
+.lt_aside .nav li a {
+    color       : #fff;
+    display     : block;
+    height      : 40px;
+    line-height : 40px;
+    padding-left: 40px;
+    border-left : 3px solid transparent;
+
+}
+
+.lt_aside .nav li a.current {
+    background-color: #1D1F21;
+    border-left     : 3px solid #006699;
+}
+
+.lt_aside .nav li a i {
+    margin-right: 5px;
+}
+
+.lt_aside .nav .child a {
+    display     : block;
+    padding-left: 60px;
+}
+
+.lt_topbar {
+    position        : fixed;
+    left            : 0;
+    top             : 0;
+    height          : 50px;
+    background-color: #3C8DBC;
+    width           : 100%;
+    padding-left    : 180px;
+    transition      : all 1s;
+}
+
+.lt_topbar.hidemenu {
+    padding-left: 0;
+}
+
+.lt_topbar a {
+    width      : 50px;
+    height     : 50px;
+    line-height: 50px;
+    font-size  : 16px;
+    color      : #fff;
+    text-align : center;
+}
+
+.lt_main {
+    padding-left: 180px;
+    padding-top : 50px;
+    transition  : all 1s;
+}
+
+.lt_main.hidemenu {
+    padding-left: 0;
+}
+
+.breadcrumb {
+    margin-top: 20px;
 }
